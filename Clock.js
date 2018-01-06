@@ -1,5 +1,4 @@
-﻿
-
+﻿//Updates time on screen
 function timeUpdate() {
     var fullDate = new Date();
     var date = document.getElementsByClassName("date");
