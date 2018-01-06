@@ -9,8 +9,8 @@ function updateDateTime(){
     var d = fullDate.getDay();
     var M = fullDate.getMonth()+1;
     var y = fullDate.getFullYear();
-    var h = fullDate.getHours()+1;
-    var m = fullDate.getMinutes()+1;
+    var h = fullDate.getHours();
+    var m = fullDate.getMinutes();
     var newTime = h+":"+m;
     var newDate = d+"/"+M+"/"+y
     date.textContent = newDate;
