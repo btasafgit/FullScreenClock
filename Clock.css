@@ -1,11 +1,20 @@
 ﻿body {
-    background-image: url("https://images.unsplash.com/photo-1473042904451-00171c69419d?auto=format&fit=crop&w=1975&q=80");
+    background-image: url("img/background.jpg");
+    font-family: 'Encode Sans Expanded', sans-serif;
+    background: cover;
+    color: rgb(255, 236, 225);
+    text-shadow: 0px 4px 3px rgba(151, 151, 151, 0.5), 0px 8px 13px rgba(73, 73, 73, 0.4), 0px 18px 23px rgba(0, 0, 0, 0.3);
 }
 
-.time{
-    font-size: 100px;
+.dateTime{
+    float: right;
+    margin-right: 5%;
+    font-size: 60px;
+    /* margin-top: 3; */
 }
 
-.date{
-    font-size: 100px;
+.date, .time{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }

@@ -1,11 +1,19 @@
-﻿//Updates time on screen
-function timeUpdate() {
-    var fullDate = new Date();
-    var date = document.getElementsByClassName("date");
-    var time = document.getElementsByClassName("time");
-    var newDate = fullDate.toLocaleDateString();
-    var newTime = fullDate.toLocaleTimeString();
+﻿
+var date = document.getElementsByClassName("date")[0];
+var time = document.getElementsByClassName("time")[0];
 
-    date[0].textContent = newDate;
-    time[0].textContent = newTime;
-}
+function updateDateTime(){
+    var fullDate = new Date();
+    // var newDate = fullDate.toLocaleDateString();
+    // var newTime = fullDate.toLocaleTimeString();
+    var d = fullDate.getDay();
+    var M = fullDate.getMonth()+1;
+    var y = fullDate.getFullYear();
+    var h = fullDate.getHours()+1;
+    var m = fullDate.getMinutes()+1;
+    var newTime = h+":"+m;
+    var newDate = d+"/"+M+"/"+y
+    date.textContent = newDate;
+    time.textContent = newTime;}
+
+setInterval(updateDateTime, 1000);
